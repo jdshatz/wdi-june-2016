@@ -1,0 +1,43 @@
+body {
+  width: 900px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  float: left;
+  width: 350px;
+  list-style: none;
+  margin-right: 50px;
+}
+
+.facebook {
+  display: block;
+  position: fixed;
+  left: 138px;
+  top: 300px;
+}
+
+.facebook img {
+  width: 40px;
+  height: 40px;
+}
+
+img.computer {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none; 
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline; 
+}
