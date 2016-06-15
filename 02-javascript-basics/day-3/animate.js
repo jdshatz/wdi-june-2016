@@ -3,15 +3,13 @@ $(document).ready(function(){
   $("a").click(function(){
     event.preventDefault()
 
-    alert("it worked")
-
     $(this).animate({
       opacity: 0.5,
-      left: "500px",
-      fontSize: "40px"
+      left: "500px"
     }, function(){
 
       $(this).animate({
+        fontSize: "40px",
         top: "100px"
       })
     

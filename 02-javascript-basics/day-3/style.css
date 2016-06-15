@@ -1,5 +1,5 @@
-p {
+a {
   position: relative;
   font-family: sans-serif;
-  cursor: pointer;
+  display: block;
 }
