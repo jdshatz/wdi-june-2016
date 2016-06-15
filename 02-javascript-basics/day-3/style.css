@@ -1,4 +1,8 @@
 a {
+  /* 
+    in order to make the element move we need to give
+    the element a non-static position property
+  */
   position: relative;
   font-family: sans-serif;
   display: block;
