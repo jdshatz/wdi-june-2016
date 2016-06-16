@@ -11,3 +11,14 @@ document.getElementById("submit-button").onclick = function(event) {
 document.getElementById("name").onkeypress = function(event) {
   console.log(event.charCode)
 }
+
+$(document).ready(function(){
+  
+  $("#submit-button").click(function(event){
+    event.preventDefault()
+
+  // when we click on the submit-button it logs the text 
+  console.log("I am logging like a logger")
+  })
+
+})
