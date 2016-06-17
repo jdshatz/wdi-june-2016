@@ -37,7 +37,6 @@ p {
   text-align: center;
   position: relative;
   transition: background-color 1s .75s;
-  /*transition: transform 1s, background-color .5s .25s;*/
 }
 
 #left {
@@ -61,6 +60,7 @@ p {
   background: blue;
 }
 
+/* this defines the animation behavior */
 @keyframes rotate-animation {
   0%  { transform: rotate(0deg); }
   25%  { transform: rotate(-40deg); }
@@ -70,6 +70,9 @@ p {
 }
 
 .rotate {
+  /*
+    this tells css to use this animation type when switching
+    to this class
+  */
   animation: rotate-animation 2s;
-  /*transform: rotate(-40deg);*/
 }
