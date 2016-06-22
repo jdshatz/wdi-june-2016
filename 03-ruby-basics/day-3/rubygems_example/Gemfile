@@ -1,0 +1,12 @@
+# determines the source of where its searching for gems
+source "http://rubygems.org"
+ruby "2.3.0"
+
+# this tells the Gemfile which gems to bundle
+gem "sinatra"
+gem "haml"
+gem "geocoder"
+gem "rainbow"
+gem "booty"
+
+# make sure to run "bundle" in the terminal
