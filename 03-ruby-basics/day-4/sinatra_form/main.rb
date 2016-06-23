@@ -12,6 +12,16 @@ get "/" do
 end
 
 # method: get
+# action: "/special"
+get "/special" do
+  # in the layout page we have a link
+  #   with ?points=20 in the url of the href
+  #   the params hash will have a key named :points
+  #   with the value of 20
+  params.inspect
+end
+
+# method: get
 # action: "/email"
 get "/email" do
   erb :email
