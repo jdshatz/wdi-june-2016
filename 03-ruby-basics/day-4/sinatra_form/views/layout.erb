@@ -6,6 +6,12 @@
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/email">Email</a></li>
+
+        <!--
+          because we have ?points=20 here on the /special
+          route in the main.rb file the params hash will contain
+          a key named points with the value of 20
+        -->
         <li><a href="/special?points=20">Special</a></li>
       </ul>
     </nav>
