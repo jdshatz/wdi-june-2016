@@ -40,7 +40,7 @@ post "/email_response" do
   # displays the response body (OK, Error, etc)
   puts response.body
 
-  # redirects to page
+  # redirects to email page
   redirect "/email"
 end
 
