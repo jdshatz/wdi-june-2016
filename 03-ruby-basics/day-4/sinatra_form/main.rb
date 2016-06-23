@@ -1,4 +1,8 @@
+# loads sinatra gem
 require "sinatra"
+
+# loads sendgrid-ruby gem
+#   we need this in order to send email
 require "sendgrid-ruby"
 
 # method: get
