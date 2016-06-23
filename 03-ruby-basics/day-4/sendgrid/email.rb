@@ -11,8 +11,6 @@ mail = SendGrid::Mail.new do |m|
   m.text = "I sent this from in class, brah!"
 end
 
-puts mail_person.send(mail)
-
-res = client.send(mail)
+res = mail_person.send(mail)
 puts res.code
 puts res.body
