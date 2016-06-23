@@ -4,12 +4,18 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+    <!-- will appear on every page of the site -->
     <nav>
       This is the navigation
     </nav>
 
+    <!-- 
+      all subtemplates will generate and output within
+      the layout at this location
+    -->
     <%= yield %>
 
+    <!-- will appear on every page of the site -->
     <footer>
       This is the footer
     </footer>
