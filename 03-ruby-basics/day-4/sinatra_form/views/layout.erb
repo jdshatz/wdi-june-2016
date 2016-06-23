@@ -4,10 +4,22 @@
   <body>
     <nav>
       <ul>
+        <!--
+          this will go to the get "/" page
+          defined in the main.rb file
+        -->
         <li><a href="/">Home</a></li>
+
+        <!--
+          this will go to the get "/email" page
+          defined in the main.rb file
+        -->
         <li><a href="/email">Email</a></li>
 
         <!--
+          this will go to the get "/special" page
+          defined in the main.rb file
+          
           because we have ?points=20 here on the /special
           route in the main.rb file the params hash will contain
           a key named points with the value of 20
