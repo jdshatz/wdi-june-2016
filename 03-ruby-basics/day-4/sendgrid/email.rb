@@ -1,7 +1,7 @@
 require "sendgrid-ruby"
 
 mail_person = SendGrid::Client.new do |mp|
-  mp.api_key = "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"
+  mp.api_key = ENV["SENDGRID_APIKEY"]
 end
 
 mail = SendGrid::Mail.new do |m|
