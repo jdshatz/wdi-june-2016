@@ -3,25 +3,36 @@
 require "sendgrid-ruby"
 
 # create a new mail person to send mail
-mail_person = SendGrid::Client.new do |mp|
-  mp.api_key = ENV["SENDGRID_APIKEY"]
+sendgrid = SendGrid::Client.new do |c|
+  c.api_key = ENV["SENDGRID_APIKEY"]
 end
 
 # creates the mail to send with a:
 #   to, from, subject and text fields 
 # (text represents the email body)
-mail = SendGrid::Mail.new do |m|
+email = SendGrid::Mail.new do |m|
   m.to = "orlando.caraballo@nycda.com"
   m.from = "orlando.caraballo@nycda.com"
   m.subject = "Hello Orlando!"
   m.text = "I sent this from in class, brah!"
 end
 
+# email = SendGrid::Mail.new(
+#   "orlando.caraballo@nycda.com",
+#   "sdfs",
+#   "orlando.caraballo@nycda.com",
+#   "sdfsdfs"  
+# )
+
+# sendgrid.send_at(email)
+
+# p email
+
 # sends the email
-res = mail_person.send(mail)
+res = sendgrid.send(email)
 
 # displays the response code (200, 300, 400, etc)
-puts res.code
+# p res.code
 
 # displays the response body (OK, Error, etc)
-puts res.body
+# p res.body

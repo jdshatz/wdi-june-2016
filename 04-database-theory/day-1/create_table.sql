@@ -1,5 +1,5 @@
 CREATE TABLE users (
-  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL ,
-  fname varchar(50),
-  date_created timestamp DEFAULT current_timestamp
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  fname VARCHAR(50),
+  date_created TIMESTAMP DEFAULT current_timestamp
 );

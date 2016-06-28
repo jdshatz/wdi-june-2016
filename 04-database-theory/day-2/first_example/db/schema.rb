@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160628151503) do
+ActiveRecord::Schema.define(version: 20160628172452) do
 
   create_table "unicorns", force: :cascade do |t|
     t.string "name"
+    t.string "skin_tone"
   end
 
 end
